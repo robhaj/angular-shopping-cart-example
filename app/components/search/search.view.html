@@ -3,10 +3,11 @@ Search by category:
   <option value="" selected></option>
   <option ng-repeat="category in categories" value="{{category}}">{{category}}</option>
 </select>
-Search by name: <input type='text' ng-model='search.name'/>
+Search by name:
+<input type='text' ng-model='search.name'/>
 Sort by price:
 <select
-ng-model="sort"
-ng-options="value.value as value.label for value in priceSort">
+  ng-model="sort"
+  ng-options="value.value as value.label for value in priceSort">
 <option></option>
 </select>
